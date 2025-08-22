@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply to Date Me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #ff6347;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 0 auto;
+      max-width: 400px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #ff6347;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #ff4500;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Apply to Date Me</h1>
+  <p>Fill out the form below and you could be my next great match!</p>
+
+  <form action="submit_form.php" method="POST">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+    
+    <label for="match_reason">Why You'd Be a Great Match:</label>
+    <textarea id="match_reason" name="match_reason" required></textarea>
+    
+    <label for="hobby">Favorite Hobby:</label>
+    <input type="text" id="hobby" name="hobby">
+    
+    <label for="pickup_line">Best Pickup Line:</label>
+    <input type="text" id="pickup_line" name="pickup_line">
+    
+    <label for="game">Favorite Game/Character:</label>
+    <input type="text" id="game" name="game">
+    
+    <label for="pet">Bonus Question: Can you handle my pet?</label>
+    <input type="text" id="pet" name="pet">
+    
+    <button type="submit">Submit My Application</button>
+  </form>
+
+</body>
+</html>
